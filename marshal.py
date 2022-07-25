@@ -4,7 +4,7 @@ import marshal
 
 os.system("clear")
 py = input("File > ")
-baca = open(file, "r").read()
+baca = open(py, "r").read()
 com = compile(baca, "", "exec")
 encrypt = marshal.dumps(com)
 baru = open("enc"+str("py"), "w")
